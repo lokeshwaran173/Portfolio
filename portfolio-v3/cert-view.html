@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Certificate — Lokeshwaran S</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-family-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: var(--bg-primary, #0b0f19);
+            color: var(--text-primary, #f8fafc);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cert-page-header {
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+        }
+
+        .cert-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary, #38bdf8);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .cert-back-btn:hover {
+            background: rgba(56, 189, 248, 0.2);
+            transform: translateX(-3px);
+        }
+
+        .cert-page-container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        .cert-meta-card {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .cert-title-group h1 {
+            font-size: 1.5rem;
+            margin: 0 0 0.4rem 0;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .cert-sub-info {
+            color: var(--text-muted, #94a3b8);
+            font-size: 0.9rem;
+        }
+
+        .cert-status-tag {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            color: #10b981;
+            font-weight: 700;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .cert-display-box {
+            background: #090d16;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        }
+
+        .cert-display-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .cert-actions-row {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cert-page-header">
+        <a href="index.html" class="cert-back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <div style="font-weight: 700; font-size: 1.1rem; color: #38bdf8;">
+            Lokeshwaran S — Official Credentials
+        </div>
+    </header>
+
+    <main class="cert-page-container">
+        <div class="cert-meta-card">
+            <div class="cert-title-group">
+                <h1 id="cert-title"><i class="fa-solid fa-award" style="color: #38bdf8;"></i> Official Certificate</h1>
+                <div class="cert-sub-info">
+                    Candidate: <strong>Lokeshwaran S</strong> | Issuer: <strong id="cert-issuer">Verified Body</strong>
+                </div>
+            </div>
+            <div>
+                <span class="cert-status-tag"><i class="fa-solid fa-circle-check"></i> Verified Active Credential</span>
+            </div>
+        </div>
+
+        <div class="cert-display-box">
+            <img id="cert-img" src="" alt="Official Certificate Image" class="cert-display-img">
+            <div class="cert-actions-row">
+                <a id="cert-download-pdf" href="#" download class="btn-executive">
+                    <i class="fa-solid fa-file-pdf"></i> Download Official PDF
+                </a>
+                <a id="cert-download-img" href="#" download class="btn-executive btn-outline">
+                    <i class="fa-solid fa-image"></i> Download Image
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const certsData = {
+            'ab730': {
+                title: 'AB-730: Microsoft Certified AI Business Professional',
+                issuer: 'Microsoft',
+                img: 'certificates/AB 730 AI BUSINESS PROFESSIONAL CERTIFCATE - LOKESHWARAN S.png',
+                pdf: 'certificates/AB 730 AI BUSINESS PROFESSIONAL CERTIFCATE - LOKESHWARAN S.pdf'
+            },
+            'claude': {
+                title: 'Claude Certified Architect - Foundations (CCA F)',
+                issuer: 'Anthropic',
+                img: 'certificates/ClaudeCertifiedCertificate20260929-20-7jsjwi.png',
+                pdf: 'certificates/ClaudeCertifiedCertificate20260929-20-7jsjwi.pdf'
+            },
+            'genai': {
+                title: 'Google Generative AI Leader',
+                issuer: 'Google Cloud',
+                img: 'certificates/GenerativeAILeader20260929-20-xe09yh.png',
+                pdf: 'certificates/GenerativeAILeader20260929-20-xe09yh.pdf'
+            },
+            'gcp': {
+                title: 'Google Certified Cloud Digital Leader',
+                issuer: 'Google Cloud',
+                img: 'certificates/CloudDigitalLeader20260929-20-ptz9mh.png',
+                pdf: 'certificates/CloudDigitalLeader20260929-20-ptz9mh.pdf'
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const certId = urlParams.get('id') || 'ab730';
+        const data = certsData[certId] || certsData['ab730'];
+
+        document.getElementById('cert-title').innerHTML = `<i class="fa-solid fa-award" style="color: #38bdf8;"></i> ${data.title}`;
+        document.getElementById('cert-issuer').textContent = data.issuer;
+        document.getElementById('cert-img').src = data.img;
+        document.getElementById('cert-download-pdf').href = data.pdf;
+        document.getElementById('cert-download-img').href = data.img;
+    </script>
+</body>
+</html>
